@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Gym Neutron | Your first 30 days free, with a coach</title>
+  <meta name="description" content="The Confidence Catalyst: a free 30-day challenge for gym beginners. A coach on day one, a written plan, beginner-only sessions. 100 spots, until November 30, 2026.">
+  <meta name="theme-color" content="#06070b">
+  <meta name="color-scheme" content="dark">
+  <meta property="og:title" content="Gym Neutron: Select your element. Build your strength.">
+  <meta property="og:description" content="Your first 30 days free, with a coach who shows you every machine. Beginners only, 100 spots.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,300..900&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <script type="importmap">
+  {
+    "imports": {
+      "three": "https://unpkg.com/three@0.170.0/build/three.module.js",
+      "three/addons/": "https://unpkg.com/three@0.170.0/examples/jsm/",
+      "gsap": "https://esm.sh/gsap@3.12.5",
+      "gsap/ScrollTrigger": "https://esm.sh/gsap@3.12.5/ScrollTrigger",
+      "lenis": "https://unpkg.com/lenis@1.1.0/dist/lenis.mjs"
+    }
+  }
+  </script>
+  <script src="js/logic.js" defer></script>
+  <script src="js/app.js" defer></script>
+  <script type="module" src="js/scene/main.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <div class="backdrop" aria-hidden="true"></div>
+  <canvas id="scene" aria-hidden="true"></canvas>
+
+  <header class="topbar">
+    <a class="brand" href="#top" aria-label="Gym Neutron, back to top">
+      <svg class="brand-mark" viewBox="0 0 32 32" aria-hidden="true">
+        <ellipse cx="16" cy="16" rx="14" ry="5.5" fill="none" stroke="currentColor" stroke-width="1.6" transform="rotate(30 16 16)"/>
+        <ellipse cx="16" cy="16" rx="14" ry="5.5" fill="none" stroke="#ff2b3d" stroke-width="1.6" transform="rotate(-30 16 16)"/>
+        <ellipse cx="16" cy="16" rx="14" ry="5.5" fill="none" stroke="#4f86ff" stroke-width="1.6" transform="rotate(90 16 16)"/>
+        <circle cx="16" cy="16" r="3.2" fill="currentColor"/>
+      </svg>
+      <span>Gym Neutron</span>
+    </a>
+    <nav class="nav" aria-label="Main">
+      <ul>
+        <li><a href="#offer">The offer</a></li>
+        <li><a href="#how">How it works</a></li>
+        <li><a href="#element">Your element</a></li>
+        <li><a href="#faq">FAQ</a></li>
+      </ul>
+    </nav>
+    <details class="menu">
+      <summary>Menu</summary>
+      <nav aria-label="Main, mobile">
+        <ul>
+          <li><a href="#offer">The offer</a></li>
+          <li><a href="#how">How it works</a></li>
+          <li><a href="#element">Your element</a></li>
+          <li><a href="#faq">FAQ</a></li>
+        </ul>
+      </nav>
+    </details>
+    <a class="btn btn-primary btn-small" href="#claim" data-claim-cta data-expired-label="Offer ended">Claim my spot</a>
+  </header>
+
+  <main id="main">
+
+    <section class="section hero" id="top" aria-labelledby="hero-title">
+      <div class="wrap">
+        <div class="hero-copy">
+          <p class="kicker">The Confidence Catalyst, a free 30-day challenge for complete beginners</p>
+          <h1 id="hero-title" class="display">
+            <span class="line">Select your element.</span>
+            <span class="line">Build your strength.</span>
+          </h1>
+          <p class="lead">Your first 30 days are free, with a coach who walks you through every machine on day one. Beginners only, 100 spots, until November 30.</p>
+          <div class="actions">
+            <a class="btn btn-primary" href="#claim" data-claim-cta data-expired-label="See what's next">Claim my free 30 days</a>
+            <a class="btn btn-glass" href="#offer">See everything you get</a>
+          </div>
+          <ul class="assurances">
+            <li>No contract</li>
+            <li>No sales pitch at orientation</li>
+            <li>No judgment, guaranteed</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section fear" id="fear" aria-labelledby="fear-title">
+      <div class="wrap">
+        <div class="col">
+          <h2 id="fear-title" class="display-2">The hardest rep is walking in.</h2>
+          <p class="lead">Most beginners don't quit because training is hard. They never start, because the gym floor feels like a test they didn't study for. So we took the test away.</p>
+          <div class="fears">
+            <article class="fear-card glass">
+              <h3>“I don't know how to use the machines.”</h3>
+              <p>A coach shows you every station in your first hour. Every machine also has a QR code that plays a 30-second how-to.</p>
+            </article>
+            <article class="fear-card glass">
+              <h3>“Everyone there will judge me.”</h3>
+              <p>Rookie Hour is for beginners only, twice a week, in quiet off-peak hours. Our No-Judgment Promise backs it up.</p>
+            </article>
+            <article class="fear-card glass">
+              <h3>“I'll pay and quit again.”</h3>
+              <p>You pay nothing for 30 days. Your coach checks in on day 14 and day 30, so you don't drift away in week three.</p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section offer" id="offer" aria-labelledby="offer-title">
+      <div class="offer-stage">
+        <div class="wrap">
+          <div class="col">
+            <h2 id="offer-title" class="display-2">Every bonus is another plate on the bar.</h2>
+            <p class="lead">The Confidence Catalyst is everything a beginner needs for the first 30 days. <span class="scroll-hint">Keep scrolling to load the bar.</span></p>
+            <ol class="stack" aria-label="What's included">
+              <li class="stack-item glass" data-plate-step="1" data-value="1500">
+                <span class="plate-dot plate-red" aria-hidden="true"></span>
+                <div><h3>30 days of Starter access</h3><p>Use the gym floor in off-peak hours, all month.</p></div>
+                <span class="value">₱1,500</span>
+              </li>
+              <li class="stack-item glass" data-plate-step="2" data-value="500">
+                <span class="plate-dot plate-blue" aria-hidden="true"></span>
+                <div><h3>One-on-one orientation</h3><p>60 minutes with a Standard Tier coach. You leave with your first workout done.</p></div>
+                <span class="value">₱500</span>
+              </li>
+              <li class="stack-item glass" data-plate-step="3" data-value="800">
+                <span class="plate-dot plate-red" aria-hidden="true"></span>
+                <div><h3>Your 30-day roadmap</h3><p>A written plan for your goal, so you always know what to do next.</p></div>
+                <span class="value">₱800</span>
+              </li>
+              <li class="stack-item glass" data-plate-step="4" data-value="1200">
+                <span class="plate-dot plate-blue" aria-hidden="true"></span>
+                <div><h3>Rookie Hour</h3><p>Beginner-only small-group sessions, twice a week.</p></div>
+                <span class="value">₱1,200</span>
+              </li>
+              <li class="stack-item glass" data-plate-step="5" data-value="300">
+                <span class="plate-dot plate-white" aria-hidden="true"></span>
+                <div><h3>Machine cheat sheets</h3><p>Scan any station's QR code for a 30-second how-to video.</p></div>
+                <span class="value">₱300</span>
+              </li>
+              <li class="stack-item glass" data-plate-step="6" data-value="600">
+                <span class="plate-dot plate-white" aria-hidden="true"></span>
+                <div><h3>Day-14 and Day-30 check-ins</h3><p>Your coach measures your progress and adjusts your plan.</p></div>
+                <span class="value">₱600</span>
+              </li>
+            </ol>
+            <div class="stack-total">
+              <p class="loaded">On the bar <strong data-stack-total>₱4,900</strong></p>
+              <p class="price">Total value ₱4,900. <strong>You pay ₱0</strong> during the launch.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section how" id="how" aria-labelledby="how-title">
+      <div class="wrap">
+        <div class="col">
+          <h2 id="how-title" class="display-2">From first visit to first pack, in four steps.</h2>
+          <ol class="steps">
+            <li class="step">
+              <h3>Register in 2 minutes</h3>
+              <p>Fill in the short form below. It's free, and there's no card to enter.</p>
+            </li>
+            <li class="step">
+              <h3>Get a call within 5 minutes</h3>
+              <p>Our front desk calls or texts you during staffed hours, 6 AM to 10 PM, to book your orientation.</p>
+            </li>
+            <li class="step">
+              <h3>Meet your coach</h3>
+              <p>A 60-minute, one-on-one orientation in a quiet off-peak slot. You leave with your plan and your first workout done.</p>
+            </li>
+            <li class="step">
+              <h3>Train for 30 days, then graduate</h3>
+              <p>Rookie Hour, your roadmap and two check-ins. Finish 12 workouts and you graduate with 20% off your first coaching pack.</p>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <section class="section element" id="element" aria-labelledby="element-title">
+      <div class="wrap">
+        <div class="col">
+          <h2 id="element-title" class="display-2">Select your element.</h2>
+          <p class="lead">Four quick questions. We'll match you with a starting path your coach can build on.</p>
+
+          <form class="quiz glass" id="quiz" novalidate>
+            <p class="quiz-progress" aria-live="polite"><span data-quiz-step>Question 1</span> of 4</p>
+
+            <fieldset class="quiz-q" data-question="1">
+              <legend>What do you want most from your first 30 days?</legend>
+              <label class="choice"><input type="radio" name="q1" value="Fe"><span>To feel stronger</span></label>
+              <label class="choice"><input type="radio" name="q1" value="O"><span>More energy and stamina</span></label>
+              <label class="choice"><input type="radio" name="q1" value="Ca"><span>To move without stiffness</span></label>
+              <label class="choice"><input type="radio" name="q1" value="Nu"><span>A bit of everything</span></label>
+            </fieldset>
+
+            <fieldset class="quiz-q" data-question="2">
+              <legend>Which workout sounds the most fun?</legend>
+              <label class="choice"><input type="radio" name="q2" value="Fe"><span>Lifting something heavy</span></label>
+              <label class="choice"><input type="radio" name="q2" value="O"><span>Sweating to good music</span></label>
+              <label class="choice"><input type="radio" name="q2" value="Ca"><span>Slow, controlled stretching</span></label>
+              <label class="choice"><input type="radio" name="q2" value="Nu"><span>Something different every day</span></label>
+            </fieldset>
+
+            <fieldset class="quiz-q" data-question="3">
+              <legend>How do you feel about the gym floor right now?</legend>
+              <label class="choice"><input type="radio" name="q3" value="Fe"><span>Curious about the weights</span></label>
+              <label class="choice"><input type="radio" name="q3" value="O"><span>Happier on a treadmill or bike</span></label>
+              <label class="choice"><input type="radio" name="q3" value="Ca"><span>Nervous, so I'd like to start gently</span></label>
+              <label class="choice"><input type="radio" name="q3" value="Nu"><span>Show me around everything</span></label>
+            </fieldset>
+
+            <fieldset class="quiz-q" data-question="4">
+              <legend>How long can you usually train per visit?</legend>
+              <label class="choice"><input type="radio" name="q4" value="Fe"><span>45 to 60 minutes</span></label>
+              <label class="choice"><input type="radio" name="q4" value="O"><span>About 30 minutes</span></label>
+              <label class="choice"><input type="radio" name="q4" value="Ca"><span>20 to 30 minutes</span></label>
+              <label class="choice"><input type="radio" name="q4" value="Nu"><span>It depends on the day</span></label>
+            </fieldset>
+
+            <p class="quiz-error" data-quiz-error role="alert"></p>
+
+            <div class="quiz-nav">
+              <button type="button" class="btn btn-glass" data-quiz-back>Back</button>
+              <button type="button" class="btn btn-primary" data-quiz-next>Next</button>
+              <button type="submit" class="btn btn-primary" data-quiz-submit>Show my element</button>
+            </div>
+          </form>
+
+          <div class="quiz-result glass" id="quiz-result" tabindex="-1" hidden>
+            <div class="element-tile" aria-hidden="true">
+              <span class="tile-number" data-result-number></span>
+              <span class="tile-symbol" data-result-symbol></span>
+              <span class="tile-name" data-result-name></span>
+            </div>
+            <div class="result-copy">
+              <p class="result-kicker">Your element</p>
+              <h3 data-result-title></h3>
+              <p data-result-summary></p>
+              <ul class="result-plan" data-result-plan></ul>
+              <div class="actions">
+                <a class="btn btn-primary" href="#claim">Bring this to your orientation</a>
+                <button type="button" class="btn btn-glass" data-quiz-restart>Retake the quiz</button>
+              </div>
+            </div>
+          </div>
+          <noscript><p class="note">Turn on JavaScript to take the quiz.</p></noscript>
+        </div>
+      </div>
+    </section>
+
+    <section class="section claim" id="claim" aria-labelledby="claim-title">
+      <div class="wrap claim-grid">
+        <div class="claim-info">
+          <h2 id="claim-title" class="display-2">Claim your free 30 days.</h2>
+
+          <div class="countdown glass" data-countdown>
+            <p class="countdown-label">Registration closes in</p>
+            <div class="countdown-units" role="timer" aria-label="Time left to register">
+              <div class="unit"><span class="num" data-cd="days">--</span><span class="lbl">days</span></div>
+              <div class="unit"><span class="num" data-cd="hours">--</span><span class="lbl">hours</span></div>
+              <div class="unit"><span class="num" data-cd="minutes">--</span><span class="lbl">minutes</span></div>
+              <div class="unit"><span class="num" data-cd="seconds">--</span><span class="lbl">seconds</span></div>
+            </div>
+            <p class="countdown-note">November 30, 2026, 11:59 PM, Philippine time. Limited to 100 beginners.</p>
+          </div>
+
+          <div class="expired glass" data-expired hidden>
+            <p class="expired-label">Offer ended</p>
+            <h3>The Confidence Catalyst has closed.</h3>
+            <p>All November spots are done. Ask our front desk about coaching packs, or check back for the next beginner intake.</p>
+          </div>
+
+          <ul class="promises">
+            <li><h3>No-Judgment Promise</h3><p>If anyone here makes you feel judged, tell the front desk and your next coaching session is free.</p></li>
+            <li><h3>Show-up reward</h3><p>Finish 12 workouts in 30 days and get 20% off your first coaching pack.</p></li>
+            <li><h3>Bring a buddy</h3><p>Sign up with a friend and you both get the full challenge. Each of you takes one spot.</p></li>
+          </ul>
+        </div>
+
+        <div class="claim-form-wrap">
+          <form class="register glass" id="register" method="post" novalidate aria-labelledby="register-title">
+            <h3 id="register-title">Lock in your spot</h3>
+            <p class="form-error-summary" data-error-summary role="alert" tabindex="-1" hidden></p>
+
+            <div class="field">
+              <label for="f-name">Full name</label>
+              <input id="f-name" name="name" type="text" autocomplete="name" maxlength="60" aria-describedby="e-name">
+              <p class="field-error" id="e-name"></p>
+            </div>
+
+            <div class="field">
+              <label for="f-email">Email</label>
+              <input id="f-email" name="email" type="email" autocomplete="email" inputmode="email" aria-describedby="e-email">
+              <p class="field-error" id="e-email"></p>
+            </div>
+
+            <div class="field">
+              <label for="f-mobile">Mobile number</label>
+              <input id="f-mobile" name="mobile" type="tel" autocomplete="tel" inputmode="tel" placeholder="09XX XXX XXXX" aria-describedby="e-mobile">
+              <p class="field-error" id="e-mobile"></p>
+            </div>
+
+            <div class="field">
+              <label for="f-time">Best time for your orientation</label>
+              <select id="f-time" name="time" aria-describedby="h-time e-time">
+                <option value="">Choose a time</option>
+                <option value="weekday-morning">Weekday morning, 6 AM to 12 PM</option>
+                <option value="weekday-afternoon">Weekday afternoon, 12 to 5 PM</option>
+                <option value="weekend">Weekend, any time</option>
+              </select>
+              <p class="field-hint" id="h-time">Orientations aren't available 5 to 8 PM on weekdays.</p>
+              <p class="field-error" id="e-time"></p>
+            </div>
+
+            <input type="hidden" name="element" value="">
+
+            <label class="check">
+              <input type="checkbox" name="buddy">
+              <span>I'm bringing a buddy</span>
+            </label>
+
+            <label class="check field" id="consent-field">
+              <input type="checkbox" name="consent" aria-describedby="e-consent">
+              <span>I agree that Gym Neutron may call, text or email me about my spot, and I've read the <a href="#faq-terms">offer terms</a>.</span>
+            </label>
+            <p class="field-error" id="e-consent"></p>
+
+            <button class="btn btn-primary btn-block" type="submit">Claim my free 30 days</button>
+            <p class="form-note">Class prototype: nothing you type here is sent or saved.</p>
+          </form>
+
+          <div class="success glass" id="register-success" tabindex="-1" hidden>
+            <p class="success-label">Spot reserved</p>
+            <h3 data-success-title>Spot reserved.</h3>
+            <p data-success-body></p>
+            <p class="form-note">Simulated confirmation. This prototype didn't send or store your details.</p>
+            <button type="button" class="btn btn-glass" data-register-reset>Register someone else</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section faq" id="faq" aria-labelledby="faq-title">
+      <div class="wrap narrow">
+        <h2 id="faq-title" class="display-2">Questions, answered.</h2>
+        <div class="faq-list">
+          <details>
+            <summary>Is it really free?</summary>
+            <p>Yes. There's no card and no contract. The 30 days, orientation, roadmap, Rookie Hour and check-ins all cost ₱0. Afterwards you can stay on our free limited-access tier or buy a coaching pack. It's your choice.</p>
+          </details>
+          <details>
+            <summary>I'm out of shape. Is this really for me?</summary>
+            <p>It was built for you. Every session starts where you are, and Rookie Hour is beginners only. Nobody expects you to know anything on day one.</p>
+          </details>
+          <details>
+            <summary>What happens after 30 days?</summary>
+            <p>At your Day-30 check-in your coach shows you your progress. If you finished 12 workouts, you get 20% off your first coaching pack. There's no pressure to buy.</p>
+          </details>
+          <details>
+            <summary>When can I train?</summary>
+            <p>Starter access covers off-peak hours: weekdays before 5 PM and after 8 PM, and all day on weekends.</p>
+          </details>
+          <details>
+            <summary>What should I bring?</summary>
+            <p>Comfortable clothes, rubber shoes, a water bottle, a small towel and a valid ID.</p>
+          </details>
+          <details id="faq-terms">
+            <summary>Offer terms</summary>
+            <ul>
+              <li>Runs November 1 to 30, 2026. Orientations must be booked and completed by November 30.</li>
+              <li>New members only, limited to the first 100 people who register.</li>
+              <li>Bring a valid local ID or proof of residence at check-in.</li>
+              <li>The free orientation is with a Standard Tier coach. Elite or Premium coaches are available if you pay the difference.</li>
+              <li>Orientations can't be booked 5 to 8 PM, Monday to Friday.</li>
+              <li>No cash value. Not transferable, and can't be combined with other discounts or corporate perks.</li>
+            </ul>
+          </details>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="wrap footer-grid">
+      <div>
+        <p class="brand footer-brand">Gym Neutron</p>
+        <p>Select your element. Build your strength.</p>
+      </div>
+      <div>
+        <p>Calamba, Laguna</p>
+        <p><a href="#claim">Claim your free 30 days</a></p>
+      </div>
+      <p class="credit">A Marketing × Web Development class project by Raiven Contreras, Jefferson Haresco and Dale Ysmael Landoy, Mapúa Malayan Colleges Laguna, 2026. Gym Neutron is a fictional gym.</p>
+    </div>
+  </footer>
+</body>
+</html>

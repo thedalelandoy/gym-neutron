@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Gym Neutron | Pitch</title>
+  <meta name="description" content="Gym Neutron final pitch: the Confidence Catalyst launch campaign and website.">
+  <meta name="theme-color" content="#06070b">
+  <meta name="color-scheme" content="dark">
+  <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,300..900&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="pitch.css">
+  <script type="importmap">
+  {
+    "imports": {
+      "three": "https://unpkg.com/three@0.170.0/build/three.module.js",
+      "three/addons/": "https://unpkg.com/three@0.170.0/examples/jsm/"
+    }
+  }
+  </script>
+  <script src="https://unpkg.com/qrcode-generator@1.4.4/qrcode.js" defer></script>
+  <script src="deck.js" defer></script>
+  <script type="module" src="stage.js"></script>
+</head>
+<body>
+  <div class="backdrop" aria-hidden="true"></div>
+  <canvas id="stage3d" aria-hidden="true"></canvas>
+
+  <main class="deck" id="deck" aria-roledescription="slide deck" aria-label="Gym Neutron pitch">
+    <div class="stage" id="stage">
+
+      <!-- 1. Title -->
+      <section class="slide slide-title" data-title="Gym Neutron" aria-roledescription="slide" aria-label="1 of 7">
+        <p class="kicker">Marketing × Web Development final pitch</p>
+        <h1 class="mega">Gym<br>Neutron</h1>
+        <p class="tagline">Select your element. <span class="outline">Build your strength.</span></p>
+        <p class="sub">Launching the Confidence Catalyst: a free 30-day challenge for gym beginners, November 1 to 30, 2026.</p>
+        <ul class="names">
+          <li>Raiven Contreras</li>
+          <li>Jefferson Haresco</li>
+          <li>Dale Ysmael Landoy</li>
+        </ul>
+        <aside class="notes">
+          <p><strong>Raiven, 0:00 to 0:30.</strong> Good morning. We're Gym Neutron, and this is the Confidence Catalyst, our launch campaign for complete beginners.</p>
+          <p>In the next eight minutes: who we're targeting, the offer, how we spend ₱30,000, and the website, live.</p>
+        </aside>
+      </section>
+
+      <!-- 2. Problem and target -->
+      <section class="slide" data-title="The problem" aria-roledescription="slide" aria-label="2 of 7">
+        <p class="kicker">Target segment</p>
+        <h2 class="title">Beginners don't fear the price.<br>They fear the floor.</h2>
+        <div class="persona glass">
+          <p class="persona-name">The nervous first-timer</p>
+          <p class="persona-meta">18 to 30, student or young professional, lives within 8 km of the gym in Calamba, Laguna. Has watched workout videos, maybe paid once and quit.</p>
+        </div>
+        <ol class="fears">
+          <li class="glass"><span class="fear-quote">“I don't know how to use the machines.”</span></li>
+          <li class="glass"><span class="fear-quote">“Everyone there will judge me.”</span></li>
+          <li class="glass"><span class="fear-quote">“I'll pay and quit again.”</span></li>
+        </ol>
+        <p class="punch">So we sell <strong>certainty and safety</strong>, not gym access.</p>
+        <aside class="notes">
+          <p><strong>Raiven, 0:30 to 1:45.</strong> Our customer is one person: the nervous first-timer. Eighteen to thirty, lives close by, has watched the videos, maybe even paid once and quit.</p>
+          <p>Price isn't what stops them. These three fears are. Read them out.</p>
+          <p>Every part of our offer answers one of these fears, and every ad opens by naming one.</p>
+        </aside>
+      </section>
+
+      <!-- 3. Offer -->
+      <section class="slide slide-offer" data-title="The offer" data-steps="6" aria-roledescription="slide" aria-label="3 of 7">
+        <p class="kicker">The offer</p>
+        <h2 class="title">Every bonus is another plate on the bar.</h2>
+        <ol class="stack">
+          <li class="glass" data-step="1"><span class="dot red"></span><span class="item">30 days of Starter access</span><span class="val">₱1,500</span></li>
+          <li class="glass" data-step="2"><span class="dot blue"></span><span class="item">One-on-one orientation with a coach</span><span class="val">₱500</span></li>
+          <li class="glass" data-step="3"><span class="dot red"></span><span class="item">Your 30-day written roadmap</span><span class="val">₱800</span></li>
+          <li class="glass" data-step="4"><span class="dot blue"></span><span class="item">Rookie Hour, beginners only, twice a week</span><span class="val">₱1,200</span></li>
+          <li class="glass" data-step="5"><span class="dot white"></span><span class="item">Machine cheat sheets on every station</span><span class="val">₱300</span></li>
+          <li class="glass" data-step="6"><span class="dot white"></span><span class="item">Day-14 and Day-30 check-ins</span><span class="val">₱600</span></li>
+        </ol>
+        <p class="total">Total value <strong data-offer-total>₱0</strong> <span class="pay">You pay ₱0</span></p>
+        <p class="fine">No-Judgment Promise · Show-up reward: 20% off after 12 workouts · Bring a buddy · 100 real slots · Closes November 30</p>
+        <aside class="notes">
+          <p><strong>Jefferson, 1:45 to 3:15.</strong> Click once per bonus; each one loads a plate.</p>
+          <p>The Confidence Catalyst stacks everything a beginner needs. Starter access, a real coach on day one, a written plan, a beginner-only hour, how-to videos on every machine, two check-ins.</p>
+          <p>₱4,900 of value for ₱0. The No-Judgment Promise covers fear two. The 100 slots are real: it's how many orientations our coaches can run. The deadline is real too.</p>
+          <p>We make money on the back end: graduates who finish 12 workouts get 20% off a coaching pack.</p>
+        </aside>
+      </section>
+
+      <!-- 4. Channels, budget and numbers -->
+      <section class="slide slide-numbers" data-title="Budget and numbers" data-steps="3" aria-roledescription="slide" aria-label="4 of 7">
+        <p class="kicker">Channels and budget</p>
+        <h2 class="title">₱30,000, sized to fill 100 slots.</h2>
+        <div class="split" data-step="1">
+          <div class="channel glass"><p class="ch-name">Meta</p><p class="ch-amt">₱18,000</p><p class="ch-meta">₱600 a day · Reels and carousels · "Afraid of getting judged?"</p></div>
+          <div class="channel glass"><p class="ch-name">TikTok</p><p class="ch-amt">₱12,000</p><p class="ch-meta">₱400 a day · Raw coach videos · "No gatekeeping, no judgment."</p></div>
+        </div>
+        <div class="math" data-step="2">
+          <p><span class="m-label">Forecast leads</span> 4,800 visitors × 5% = <strong>240 leads</strong></p>
+          <p><span class="m-label">Lead conversion</span> 240 ÷ 4,800 × 100% = <strong>5%</strong></p>
+          <p><span class="m-label">Cost per lead</span> ₱30,000 ÷ 240 = <strong>₱125</strong></p>
+        </div>
+        <ol class="funnel" data-step="3">
+          <li><strong>240</strong><span>leads</span></li>
+          <li><strong>144</strong><span>booked (60%)</span></li>
+          <li><strong>101</strong><span>show up (70%)</span></li>
+          <li class="hot"><strong>100</strong><span>slots filled</span></li>
+          <li><strong>25</strong><span>coaching packs ≈ ₱64,000</span></li>
+        </ol>
+        <aside class="notes">
+          <p><strong>Jefferson, 3:15 to 4:45.</strong> Click 1: the split. Meta gets ₱18,000 because it reaches Calamba's 18 to 30 crowd best; TikTok gets ₱12,000 for raw coach videos.</p>
+          <p>Click 2: the formulas from the brief. 4,800 visitors at a 5% page conversion is 240 leads, ₱125 each.</p>
+          <p>Click 3: the funnel. The front desk calls every lead within 5 minutes; 60% book and 70% show, about 101 people, which fills the 100 slots. 25 coaching packs bring about ₱64,000: 2.1 times the ad spend.</p>
+        </aside>
+      </section>
+
+      <!-- 5. The website -->
+      <section class="slide slide-site" data-title="The website, live" aria-roledescription="slide" aria-label="5 of 7">
+        <p class="kicker">Live demo</p>
+        <h2 class="title">The website does the selling.</h2>
+        <ul class="features">
+          <li class="glass"><span class="f-num">1</span><div><p class="f-name">Form validation</p><p class="f-desc">Name, email, mobile, off-peak time and consent, with clear messages. Simulated success; nothing stored or sent.</p></div></li>
+          <li class="glass"><span class="f-num">2</span><div><p class="f-name">Countdown + expired state</p><p class="f-desc">Counts to Nov 30, 2026, 11:59 PM. After that, the offer closes and the form locks.</p></div></li>
+          <li class="glass"><span class="f-num">3</span><div><p class="f-name">"Select your element" quiz</p><p class="f-desc">Four questions match you to Iron, Oxygen, Calcium or Neutron.</p></div></li>
+        </ul>
+        <div class="live glass">
+          <div class="qr" id="qr" aria-hidden="true"></div>
+          <div>
+            <p class="live-label">Scan or open</p>
+            <p class="live-url" data-live-url>thedalelandoy.github.io/gym-neutron</p>
+            <p class="live-meta">HTML, CSS and JavaScript in separate files · Three.js 3D · works on phones</p>
+          </div>
+        </div>
+        <aside class="notes">
+          <p><strong>Dale, 4:45 to 6:45. Switch to the browser tab with the site.</strong></p>
+          <p>Show: scroll the hero and the bar loading. Submit the form empty (errors), then valid (confirmation). Take the quiz. Then open the same address with ?now=2026-12-01T00:00:00%2B08:00 to show the expired state. Finish with the phone layout (shrink the window or open it on a phone).</p>
+        </aside>
+      </section>
+
+      <!-- 6. Testing and contingency -->
+      <section class="slide slide-tests" data-title="Testing and what-ifs" aria-roledescription="slide" aria-label="6 of 7">
+        <p class="kicker">Testing and contingency</p>
+        <h2 class="title">High traffic, low leads?<br>The page is the problem.</h2>
+        <ol class="checks">
+          <li class="glass">Does the headline repeat the ad's hook word for word?</li>
+          <li class="glass">Does it load fast on a phone over mobile data?</li>
+          <li class="glass">Is the form short, with clear error messages?</li>
+          <li class="glass">Are the offer and deadline visible without scrolling?</li>
+        </ol>
+        <div class="kpis">
+          <p><strong>16 of 16</strong> test cases passed, including the expired-offer test, on six screen sizes.</p>
+          <p>Weekly KPIs: page conversion ≥ 4% · first contact &lt; 5 min · booking ≥ 60% · show rate ≥ 70% · cost per show-up ≤ ₱350</p>
+        </div>
+        <aside class="notes">
+          <p><strong>Dale, 6:45 to 7:30.</strong> We tested 16 cases on six screen sizes; all passed, including the mandatory expired state.</p>
+          <p>If traffic is high but leads are low, the ads are working and the page isn't. We check these four things in order and change one at a time.</p>
+        </aside>
+      </section>
+
+      <!-- 7. Team -->
+      <section class="slide slide-team" data-title="Team and Q&amp;A" aria-roledescription="slide" aria-label="7 of 7">
+        <p class="kicker">How we built it</p>
+        <h2 class="title">Built together,<br>from idea to website.</h2>
+        <ul class="team">
+          <li class="glass"><p class="t-name">Raiven Contreras</p></li>
+          <li class="glass"><p class="t-name">Jefferson Haresco</p></li>
+          <li class="glass"><p class="t-name">Dale Ysmael Landoy</p></li>
+        </ul>
+        <p class="t-roles">Each of us: ideation, strategy, offer, budget, copy, design, HTML/CSS/JS, 3D, testing, pitch.</p>
+        <p class="ai-note">We used AI to build faster, and we can walk you through every file.</p>
+        <p class="qa">Questions?</p>
+        <aside class="notes">
+          <p><strong>All three, 7:30 to 8:00.</strong> We did everything together, from the first idea to the last line of code. We used AI as a partner, as the class allows, and each of us can explain how any part works.</p>
+          <p>Thank you. We're happy to take questions.</p>
+        </aside>
+      </section>
+
+    </div>
+
+    <footer class="deck-bar" aria-hidden="true">
+      <span class="deck-brand">Gym Neutron</span>
+      <span class="deck-count" id="deck-count">1 / 7</span>
+    </footer>
+    <div class="deck-progress" aria-hidden="true"><span id="deck-progress"></span></div>
+    <p class="deck-help" id="deck-help">← → to move · F fullscreen · P presenter view</p>
+  </main>
+
+  <!-- Presenter view (opened with P, or pitch/?presenter) -->
+  <section class="presenter" id="presenter" hidden>
+    <header class="p-head">
+      <p class="p-slide"><span id="p-num">1</span> / 7 <span id="p-title"></span></p>
+      <p class="p-timer" id="p-timer">00:00</p>
+    </header>
+    <div class="p-notes" id="p-notes"></div>
+    <p class="p-next">Next: <span id="p-next"></span></p>
+    <div class="p-buttons">
+      <button type="button" id="p-prev">Back</button>
+      <button type="button" id="p-reset">Reset timer</button>
+      <button type="button" id="p-forward">Next</button>
+    </div>
+  </section>
+</body>
+</html>

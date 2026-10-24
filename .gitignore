@@ -1,0 +1,5 @@
+captures/
+node_modules/
+*.zip
+.claude/
+docs/pitch-slides/print.html

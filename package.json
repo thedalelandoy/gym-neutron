@@ -1,0 +1,9 @@
+{
+  "name": "gym-neutron",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Gym Neutron: Confidence Catalyst launch campaign site (Marketing x Web Development final project).",
+  "scripts": {
+    "test": "node --test tests/logic.test.js"
+  }
+}
